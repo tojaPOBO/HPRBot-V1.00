@@ -2,6 +2,8 @@ import os
 import discord
 from discord.ext import commands
 import random
+import time
+
 # uprawnienia
 intents = discord.Intents.default()
 intents.message_content = True
@@ -10,6 +12,7 @@ intents.guilds = True
 intents.bans = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
+
 
 
 @bot.event
@@ -23,11 +26,14 @@ async def powitaj(ctx):
 
 
 
-# czesc
+# --- czesc ---
 @bot.command()
 async def cześć(ctx):
     await ctx.send(f"Cześć {ctx.author.name}")
 
+@bot.command()
+async def czesc(ctx):
+    await ctx.send(f"Cześć {ctx.author.name}")
 # --- PA ---
 @bot.command()
 async def papa(ctx):
@@ -37,6 +43,18 @@ async def papa(ctx):
 @bot.command()
 async def repo(ctx):
     await ctx.send(f"Link Do Repo HPRBota: https://github.com/tojaPOBO/HPRBot-V1.00")
+
+# --- Fortune ---
+@bot.command()
+async def fortune(ctx):
+    wybor = random.randint(0, 9)
+    await ctx.send(f"OSOBY 1.Pobo 2.Hoper 3.Kuba 4.olek 5.kajtek 6.swiatas 7.wika 8.kinga 9.majka")
+    time.sleep(3)
+    await ctx.send(f"Losuje...")
+    time.sleep(4)
+    await ctx.send(f"Wybrano Osobe... {wybor} Brawo")
+    
+    
 
 # --- SHIP ---
 @bot.command()
@@ -72,18 +90,34 @@ async def ban_error(ctx, error):
 @bot.command()
 @commands.has_permissions(ban_members=True)
 async def unban(ctx, *, uzytkownik: str):
-    bany = await ctx.guild.bans()
+    try:
+        # Pobieramy bany jako generator asynchroniczny i zamieniamy je na listę
+        bany = [wpis async for wpis in ctx.guild.bans()]
+    except Exception as e:
+        await ctx.send(f"❌ Błąd podczas pobierania banów: `{e}`")
+        return
+
+    uzytkownik = uzytkownik.strip()
 
     for wpis in bany:
-        user = wpis.user
-        if user.name.lower() == uzytkownik.lower() or str(user.id) == uzytkownik:
-            await ctx.guild.unban(user)
-            await ctx.send(f"Użytkownik **{user.name}** został odbanowany.")
-            return
+        # Obsługa w zależności od struktury wpisu w tej wersji
+        user = wpis.user if hasattr(wpis, 'user') else wpis[1]
+        
+        if str(user.id) == uzytkownik or user.name.lower() == uzytkownik.lower():
+            try:
+                await ctx.guild.unban(user)
+                await ctx.send(f"Użytkownik **{user.name}** został odbanowany.")
+                return
+            except Exception as e:
+                await ctx.send(f"❌ Wystąpił błąd przy odbanowywaniu: `{e}`")
+                return
 
     await ctx.send(f"Nie znaleziono zbanowanego użytkownika: `{uzytkownik}`")
 
-
+@unban.error
+async def unban_error(ctx, error):
+    if isinstance(error, commands.MissingPermissions):
+        await ctx.send("Nie masz uprawnień do odbanowywania użytkowników! (Wymagane: Ban Members)")
 # --- KICK ---
 @bot.command()
 @commands.has_permissions(kick_members=True)
@@ -103,5 +137,5 @@ async def kick_error(ctx, error):
 
 
 # włąćzenie bota
-TOKEN = os.getenv("DISCORD_TOKEN", "wklej tu swoj token bota")
+TOKEN = os.getenv("DISCORD_TOKEN", "daj token bota")
 bot.run(TOKEN)
