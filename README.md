@@ -1,9 +1,9 @@
-# HPRBot-V1.00
+# HPRBot-V1.0.2
 <div align="center">
 
-# 🚀 HPRBot
+# 🎃 HPRBot 🎃
 
-*Najlepszy bot jaki znajdziesz.*
+*Najlepszy Bot Jaki Znajdziesz.*
 
 [Demo na żywo](#) · [Zgłoś błąd](../../issues) · [Zaproponuj funkcję](../../issues)
 
@@ -12,36 +12,37 @@
 ---
 
 ## 🛠️ Spis treści
-- [O projekcie]
-  - To Jest Bot Na Discorda Który używa pythona!
+- [O Projekcie]
+  - To Jest Bot Na Discorda Który Używa Pythona!
+  - Są Częste Aktualizacje W Szybkim Tępie!
+  - Projekt Robiony Z Pasji!
 - [Komendy!]
-  - !cześć : Bot mówi ci cześć!
-  - !papa : Bot mówi ci papa
-  - !ban nazwa_uzytkownika powod : Banuje uzytkownika
-  - !kick : Wywala uzytkownika z serwera
-  - !powitaj : wita kazdego na serwerze
-  - !ship @Osoba1 @Osoba2 : pokazuje na ile procent te osoby bedą razem
-  - !repo : pokazuje to repozytorium
-  - !fortune : koło fortuny
+  - !cześć : Bot mówi: "Cześć (Nazwa Użytkownika)" (Mozna Tez Napisac Czesc Zamiast Cześć).
+  - !papa : Bot mówi: "Papa (Nazwa Użytkownika)".
+  - !ban nazwa_uzytkownika powod : Banuje Wybraną Osobe.
+  - !kick : Wywala Wybraną Osobe Z Serwera.
+  - !powitaj :Bot mówi: "Witajcie @everyone jak wam dzien mija mam nadzieje ze swietnie HPRBot górą".
+  - !ship @Osoba1 @Osoba2 : pokazuje na ile procent te osoby bedą razem (Komenda Dla Żartu).
+  - !repo : Pokazuje To Repozytorium Które Właśnie Czytasz :).
+  - !fortune : Bot Robi Koło Fortuny.
   -- (Experymentalne komendy)
-  - !unban : unbanuje uzytkownika
+  - !unban : Unbanuje Wybraną Osobe.
 - [Instalacja]
-  - Pobierz plik Daj Swojego bota token do kodu i odpal
+  - Pobierz Plik Daj Swojego Bota, Token Do Kodu I Odpal.
 - [Użycie]
-  - zwykłe
+  - Dokładnie Takie Jak Tu, Czyli Nadajesz Mu Polecenia A On Je Wykonuje. (Kto By Sie Spodziewal..)
 - [Licencja]
-  - Nie ma
+  - Nie Posiada.
 
 ---
 
-## 📖 O projekcie
-W tym miejscu opisz swój projekt dłuższym tekstem. Odpowiedz na pytania:
+## 📖 O Projekcie
 * Dlaczego ten projekt powstał?
-* bo probot jest słaby
-* Jakie problemy rozwiązuje?
-* wszystkie
-* Jakie technologie zostały użyte
-* python
+* Bo Chcieliśmy Zrobić Coś Własnego.
+* Jakie Problemy Rozwiązuje?
+* Podstawowe Problemy Z Serwerem, Naprzykład Ułatwia Kickowanie, Wywalanie I Różne Tego Typu Rzeczy.
+* W Jakim Języku Programowania Został Stworzony?
+* W Pythonie :).
 
 ---
 
@@ -49,8 +50,8 @@ W tym miejscu opisz swój projekt dłuższym tekstem. Odpowiedz na pytania:
 
 ---
 
-## 🚀 Instalacja
+## 🐧 Instalacja Na Linuxa (Na Bashu)
 
-1. Sklonuj repozytorium:
-   ```bash
-   git clone [https://github.com/twoja-nazwa/nazwa-projektu.git](https://github.com/twoja-nazwa/nazwa-projektu.git)
+1. Sklonuj Repozytorium (I To Wsumie Tyle) :
+ ```bash
+git clone (https://github.com/tojaPOBO/HPRBot-V1.00)
