@@ -22,7 +22,7 @@
   - !powitaj : wita kazdego na serwerze
   - !ship @Osoba1 @Osoba2 : pokazuje na ile procent te osoby bedą razem
   - !repo : pokazuje to repozytorium
-
+  - !fortune : koło fortuny
   -- (Experymentalne komendy)
   - !unban : unbanuje uzytkownika
 - [Instalacja]
