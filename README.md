@@ -19,7 +19,11 @@
   - !papa : Bot mówi ci papa
   - !ban nazwa_uzytkownika powod : Banuje uzytkownika
   - !kick : Wywala uzytkownika z serwera
-  (Experymentalne komendy)
+  - !powitaj : wita kazdego na serwerze
+  - !ship @Osoba1 @Osoba2 : pokazuje na ile procent te osoby bedą razem
+  - !repo : pokazuje to repozytorium
+
+  -- (Experymentalne komendy)
   - !unban : unbanuje uzytkownika
 - [Instalacja]
   - Pobierz plik Daj Swojego bota token do kodu i odpal
