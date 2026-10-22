@@ -1,9 +1,9 @@
 # HPRBot-V1.00
 <div align="center">
 
-# 🚀 Nazwa Projektu
+# 🚀 HPRBot
 
-*Krótkie, chwytliwe zdanie podsumowujące, co robi ten projekt.*
+*Najlepszy bot jaki znajdziesz.*
 
 [Demo na żywo](#) · [Zgłoś błąd](../../issues) · [Zaproponuj funkcję](../../issues)
 
