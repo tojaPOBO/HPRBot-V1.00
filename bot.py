@@ -22,6 +22,13 @@ async def on_ready():
 async def cześć(ctx):
     await ctx.send(f"Cześć {ctx.author.name}")
 
+# --- PA ---
+@bot.command()
+async def papa(ctx):
+    await ctx.send(f"Papa {ctx.author.name}")
+
+
+
 
 # --- BAN ---
 @bot.command()
