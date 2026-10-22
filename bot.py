@@ -71,7 +71,7 @@ async def unban(ctx, *, uzytkownik: str):
 
 @bot.command()
 @commands.has_permissions(kick_members=True)
-async def kick(ctx,member: discord.Member, *, powód="nie ma")
+async def kick(ctx,member: discord.Member, *, powód="nie ma"):
    await member.kick(reason=powód)
    await ctx.send(f"Użytkownik **{member.name}** Ma Kicka bo: {powód}")
    
