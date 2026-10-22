@@ -1,11 +1,11 @@
 import os
 import discord
 from discord.ext import commands
-
+import random
 # uprawnienia
 intents = discord.Intents.default()
 intents.message_content = True
-intents.members = True  # Wymagane do member converterów w kick/ban
+intents.members = True  
 intents.guilds = True
 intents.bans = True
 
@@ -15,6 +15,12 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 @bot.event
 async def on_ready():
     print(f"Zalogowano jako {bot.user}!")
+
+# --- Powitaj ---
+@bot.command()
+async def powitaj(ctx):
+    await ctx.send(f"Witajcie @everyone jak wam dzien mija mam nadzieje ze swietnie HPRBot górą")
+
 
 
 # czesc
@@ -26,6 +32,19 @@ async def cześć(ctx):
 @bot.command()
 async def papa(ctx):
     await ctx.send(f"Papa {ctx.author.name}")
+
+# --- REPO ---
+@bot.command()
+async def repo(ctx):
+    await ctx.send(f"Link Do Repo HPRBota: https://github.com/tojaPOBO/HPRBot-V1.00")
+
+# --- SHIP ---
+@bot.command()
+async def ship(ctx, member1: discord.Member, member2: discord.Member = None):
+        
+    procent = random.randint(0, 100)
+    await ctx.send(f"Komena zrobiona dla żartu NIE BRAĆ NA POWAŻNIE")
+    await ctx.send(f"Ship **{member1.display_name}** Z **{member2.display_name}** ma: **{procent}%**!")
 
 
 
@@ -84,5 +103,5 @@ async def kick_error(ctx, error):
 
 
 # włąćzenie bota
-TOKEN = os.getenv("DISCORD_TOKEN", "TUTAJ_WKLEJ_NOWY_ZRESETOWANY_TOKEN")
+TOKEN = os.getenv("DISCORD_TOKEN", "wklej tu swoj token bota")
 bot.run(TOKEN)
