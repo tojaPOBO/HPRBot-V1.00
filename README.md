@@ -12,26 +12,36 @@
 ---
 
 ## 🛠️ Spis treści
-- [O projekcie](#o-projekcie)
-- [Wymagania wstępne](#wymagania-wstępne)
-- [Instalacja](#instalacja)
-- [Użycie](#użycie)
-- [Licencja](#licencja)
+- [O projekcie]
+  - To Jest Bot Na Discorda Który używa pythona!
+- [Komendy!]
+  - !cześć : Bot mówi ci cześć!
+  - !papa : Bot mówi ci papa
+  - !ban nazwa_uzytkownika powod : Banuje uzytkownika
+  - !kick : Wywala uzytkownika z serwera
+  (Experymentalne komendy)
+  - !unban : unbanuje uzytkownika
+- [Instalacja]
+  - Pobierz plik Daj Swojego bota token do kodu i odpal
+- [Użycie]
+  - zwykłe
+- [Licencja]
+  - Nie ma
 
 ---
 
 ## 📖 O projekcie
 W tym miejscu opisz swój projekt dłuższym tekstem. Odpowiedz na pytania:
 * Dlaczego ten projekt powstał?
+* bo probot jest słaby
 * Jakie problemy rozwiązuje?
-* Jakie technologie zostały użyte (np. React, Python, Docker)?
+* wszystkie
+* Jakie technologie zostały użyte
+* python
 
 ---
 
-## ⚙️ Wymagania wstępne
-Zanim zacznisz, upewnij się, że masz zainstalowane:
-* [Node.js](https://nodejs.org/) (wersja 18 lub nowsza)
-* [Git](https://git-scm.com/)
+
 
 ---
 
