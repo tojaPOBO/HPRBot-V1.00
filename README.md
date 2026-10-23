@@ -24,8 +24,8 @@
     - !ship @Osoba1 @Osoba2 : pokazuje na ile procent te osoby bedą razem (Komenda Dla Żartu).
     - !repo : Pokazuje To Repozytorium Które Właśnie Czytasz :).
     - !fortune : Bot Robi Koło Fortuny.
-   
- - [Komendy Dla Moderatorow
+  
+  - [Komendy Dla Moderatorow
     - !ban nazwa_uzytkownika powod : Banuje Wybraną Osobe.
     - !kick : Wywala Wybraną Osobe Z Serwera.
     - !unban : Unbanuje Wybraną Osobe.
