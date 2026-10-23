@@ -1,4 +1,4 @@
-# HPRBot-V1.0.2
+# HPRBot-V1.0.3
 <div align="center">
 
 # 🎃 HPRBot 🎃
