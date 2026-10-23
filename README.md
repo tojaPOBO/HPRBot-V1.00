@@ -3,7 +3,7 @@
 
 # 🎃 HPRBot 🎃
 
-*Najlepszy Bot Jaki Znajdziesz.*
+*Najlepszy (Polski) Bot Jaki Znajdziesz.*
 
 [Demo na żywo](#) · [Zgłoś błąd](../../issues) · [Zaproponuj funkcję](../../issues)
 
