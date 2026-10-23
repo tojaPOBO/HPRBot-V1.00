@@ -17,16 +17,21 @@
   - Są Częste Aktualizacje W Szybkim Tępie!
   - Projekt Robiony Z Pasji!
 - [Komendy!]
-  - !cześć : Bot mówi: "Cześć (Nazwa Użytkownika)" (Mozna Tez Napisac Czesc Zamiast Cześć).
-  - !papa : Bot mówi: "Papa (Nazwa Użytkownika)".
-  - !ban nazwa_uzytkownika powod : Banuje Wybraną Osobe.
-  - !kick : Wywala Wybraną Osobe Z Serwera.
-  - !powitaj :Bot mówi: "Witajcie @everyone jak wam dzien mija mam nadzieje ze swietnie HPRBot górą".
-  - !ship @Osoba1 @Osoba2 : pokazuje na ile procent te osoby bedą razem (Komenda Dla Żartu).
-  - !repo : Pokazuje To Repozytorium Które Właśnie Czytasz :).
-  - !fortune : Bot Robi Koło Fortuny.
-  -- (Experymentalne komendy)
-  - !unban : Unbanuje Wybraną Osobe.
+  - [Komendy For Fun]
+    - !cześć : Bot mówi: "Cześć (Nazwa Użytkownika)" (Mozna Tez Napisac Czesc Zamiast Cześć).
+    - !papa : Bot mówi: "Papa (Nazwa Użytkownika)"
+    - !powitaj :Bot mówi: "Witajcie @everyone jak wam dzien mija mam nadzieje ze swietnie HPRBot górą".
+    - !ship @Osoba1 @Osoba2 : pokazuje na ile procent te osoby bedą razem (Komenda Dla Żartu).
+    - !repo : Pokazuje To Repozytorium Które Właśnie Czytasz :).
+    - !fortune : Bot Robi Koło Fortuny.
+   
+-- [Komendy Dla Moderatorow
+    - !ban nazwa_uzytkownika powod : Banuje Wybraną Osobe.
+    - !kick : Wywala Wybraną Osobe Z Serwera.
+    - !unban : Unbanuje Wybraną Osobe.
+    - !clear ilosć wiadomosci : usuwa daną ilosc wiadomosci
+
+
 - [Instalacja]
   - Pobierz Plik Daj Swojego Bota, Token Do Kodu I Odpal.
 - [Użycie]
